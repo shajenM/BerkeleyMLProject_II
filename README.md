@@ -96,17 +96,31 @@ Not sure why odometer is selected even though it has less effect on price.
 The error on prediction remain close to basic linear regression model.
 
 ### Model: Linear Regression with Lasso Based Feature Selection
-
-Not much different from Basic Linear Regression
+The lasso selected all features except color orange
+The prediction error remain almost same
 
 ### Model: Ridge Regression with Lasso Based Feature Selection
-  
+In this model Ridge regression is used and Lasss for feature selection. It selected all the features except Orange car color.
+The error in prediction remain same as basic linear regression.
+The alpha value is 1.0
+
 ### Model: GridSearch and Cross validation on Rdige Regression
- 
+This model is built using GridSearch and Cross Validation of 5 times. Lasso is the estimator for paramters. Ridge is used for regression.
+The grid search determined aplha value 1.0. 
+In terms of gain, not much different from basic linear regression
+
+### Comparison Report
+
+Here is the report on comparison of parameter values and prediction error of all 5 models.
 
 ![Test model](ModelReport.png)
 
-## Insights
-Coupons 'Restaurant(<20)' and 'Carry out & Take away' have higher acceptance rate.
-Drivers who already visited bar are likely to accept Bar coupons. Age above 30 is a factor. Also passanger being a kid also affecting decision to going to Bar.
-Attributes like age, marital status, occupation does not seems much effect in accepting coupons.
+## Conclusion
+#### Model with lowest prediction error is Lasso with Linear Regression. But this took higher amount of time to trian
+#### Sequential Feature selector helped to reduce number of features, but did not helped to reduce prediction error.
+
+##### Odomerter has less effect on price. Not sure Sequential selector and Lasso did not remove Odometer column
+##### I found basic Linear Regression is best model among these since it takes less time to train and error is almost same as others
+##### In this model
+#####    White and yellow color, Condition of car, size, trasmission and year affects price to increase.
+#####
