@@ -40,7 +40,7 @@ type        : "other"
 paint_color : "a_color"
 ```
 ## Data analysis
-Most of the data are catagorical in nature. To start with, the histogram shows the sales and their price range. Most of the cars sold are in price between 100 to 40,000.
+Most of the data are catagorical in nature. To start with, the histogram shows the sales and their price range. Most of the cars sold are in price between $1000 to $40,000.
 
 ![PriceRange](histPrice.png)
 
