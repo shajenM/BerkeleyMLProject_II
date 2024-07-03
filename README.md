@@ -43,35 +43,45 @@ paint_color : "a_color"
 Most of the data are catagorical in nature. To start with, the histogram shows the sales and their price range. Most of the cars sold are in price between $1000 to $40,000.
 
 ![PriceRange](histPrice.png)
-
-
+<br>
+<br>
 The year and odometer are only numerical features in dataset. Thier relation with price is analyzed below:
 ![HeatMap](car_heatmap.png)
-
-
+<br>
+<br>
 The line plot on year vs price suggest that cars from recent years have higher price.
 ![YearPrice](year_price.png)
 
+<br>
+<br>
 
 The scatter plot on odometer shows its lack of relationship on price.
 ![OdometerPrice](odometer_price.png)
 
+<br>
+<br>
 
 The new and good condition cars have more sales. The boxplot below suggests that.
 ![ConditionPrice](condition_price.png)
 
+<br>
+<br>
 
 Cars with clean title have more sales.
-
 ![TitlePrice](title_price.png)
 
+<br>
+<br>
 
 The Four Wheel and Rear Wheel drives have higher sales.
 ![DrivePrice](drive_price.png)
+<br>
+<br>
 
 Some interesting information were found from data. For example, California has high car sales. Cheverlot and Ford Manufacturers have sold most of cars. Toyota is on third place.
 ![States](sales_state.png)
 ![manufactures](sales_manufacturer.png)
+
 
 # Model Training
  For traininig and test purpose data is splited with 20% for testing.
